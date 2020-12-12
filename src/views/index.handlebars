@@ -1,0 +1,15 @@
+{{#if submitted}}
+  <p class="success">You are awesome! Your data successfully sent! Thank You!</p>
+  {{else}}
+  <form action="/submitted" method="post" class="form" id="form">
+    <input type="text" class="form__field" name="author" placeholder="author" id="formAuthor"/>
+    <input type="date" class="form__field" id="formDate" name="date"/>
+    <textarea class="form__field form__field_big" name="article" placeholder="article text" id="formArticle"></textarea>
+    <input type="text" class="form__field" name="tags" placeholder="tag, tag, tag..." id="formTags"/>
+    <textarea class="form__field form__field_big" name="comment" placeholder="comment" id="formComment"></textarea>
+
+    <button type="submit" class="form__submit" id="submit">Submit</button>
+
+    <span class="form__error" id="formError"></span>
+  </form>
+{{/if}}

@@ -1,0 +1,39 @@
+@import "library/fonts";
+@import "library/variables";
+@import "library/mixins";
+@import "library/normalize";
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url('../assets/images/bg.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  max-width: 700px;
+  width: 90%;
+  color: rgba(60, 141, 236, 1);
+  text-align: center;
+}
+
+@import "form";
