@@ -1,5 +1,20 @@
 {{#if submitted}}
-  <p class="success">You are awesome! Your data successfully sent! Thank You!</p>
+  {{# if result}}
+    <div class="result">
+      <p class="result__field">author: {{result.author}}</p>
+      <p class="result__field">date: {{result.date}}</p>
+      <p class="result__field">article: {{result.article}}</p>
+      <p class="result__field">tags: {{result.tags}}</p>
+      <p class="result__field">comment: {{result.comment}}</p>
+    </div>
+
+    {{else}}
+    <div class="success">
+      <p class="success__message">You are awesome! Your data successfully sent! Thank You!</p>
+      <a class="success__link" href="/api">View result</a>
+    </div>
+  {{/if}}
+
   {{else}}
   <form action="/submitted" method="post" class="form" id="form">
     <input type="text" class="form__field" name="author" placeholder="author" id="formAuthor"/>

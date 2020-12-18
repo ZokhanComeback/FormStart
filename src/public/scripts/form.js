@@ -1,3 +1,4 @@
+"use strict";
 var checkElements = function () {
     var elements = [];
     for (var _i = 0; _i < arguments.length; _i++) {

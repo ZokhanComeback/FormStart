@@ -51,13 +51,28 @@ body {
   align-items: center; }
 
 .success {
-  font-size: 36px;
-  font-weight: bold;
-  text-transform: uppercase;
-  max-width: 700px;
-  width: 90%;
-  color: #3c8dec;
-  text-align: center; }
+  display: flex;
+  flex-direction: column; }
+  .success__message {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 700px;
+    width: 90%;
+    color: #3c8dec;
+    text-align: center;
+    margin-bottom: 15px; }
+  .success__link {
+    font-size: 24px;
+    color: #3c8dec;
+    text-decoration: none; }
+
+.result {
+  display: flex;
+  flex-direction: column; }
+
+.result > .result__field:not(:last-child) {
+  margin-bottom: 15px; }
 
 .form {
   width: 90%;

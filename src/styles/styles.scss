@@ -27,13 +27,38 @@ body {
 }
 
 .success {
-  font-size: 36px;
-  font-weight: bold;
-  text-transform: uppercase;
-  max-width: 700px;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__message {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 700px;
+    width: 90%;
+    color: rgba(60, 141, 236, 1);
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__link {
+    font-size: 24px;
+    color: rgba(60, 141, 236, 1);
+    text-decoration: none;
+  }
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+}
+
+.result > .result__field:not(:last-child) {
+  font-size: 24px;
   color: rgba(60, 141, 236, 1);
   text-align: center;
+  margin-bottom: 15px;
 }
 
 @import "form";
